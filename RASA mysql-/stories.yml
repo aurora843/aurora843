@@ -1,0 +1,14 @@
+version: "3.1"
+
+stories:
+- story: 세탁 정보 문의
+  steps:
+    - intent: ask_laundry_info
+    - action: action_show_laundry_info
+
+- story: 급식 정보 문의
+  steps:
+    - intent: ask_meal_info
+    - action: action_show_meal_info
+
+
