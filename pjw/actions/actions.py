@@ -89,12 +89,12 @@ class ActionChatBot(Action):
                         break
 
             if matched_category:
-                query = "SELECT `세부항목` FROM number WHERE `구분` = %s"
+                query = "SELECT `세부항목`, `상세내용` FROM number WHERE `구분` = %s"
                 cursor.execute(query, (matched_category,))
                 rows = cursor.fetchall()
 
                 if rows:
-                    lines = [f"- {row[0]}" for row in rows]
+                    lines = [f"- {row[0]} → {row[1]}" for row in rows]
                     result = "\n".join(lines)
                     dispatcher.utter_message(text=f"📞 [{matched_category}] 연락처 세부항목 목록입니다:\n{result}")
                 else:
