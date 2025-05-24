@@ -129,7 +129,7 @@ class ActionChatBot(Action):
 
             if matched_sub_item:
                 sub_name, sub_detail = matched_sub_item
-                dispatcher.utter_message(text=f"📞 [{sub_name}] 상세 정보:\n{sub_detail}")
+                dispatcher.utter_message(text=f"{sub_detail}")
                 return []
             # ------------------- 6. 어떤 조건도 해당하지 않는 경우 -------------------
             dispatcher.utter_message(text="죄송해요. 해당 내용을 이해하지 못했어요. 다시 질문해 주세요.")
