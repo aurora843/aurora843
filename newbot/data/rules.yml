@@ -7,6 +7,571 @@ rules:
     - intent: ask_category_rule
     - action: action_chatbot
 
+- rule: respond to 선문대학교 대표전화 번호
+  steps:
+  - intent: ask_선문대학교_대표전화_번호
+  - action: utter_ask_선문대학교_대표전화_번호
+
+- rule: respond to 교목행정 번호
+  steps:
+  - intent: ask_교목행정_번호
+  - action: utter_ask_교목행정_번호
+
+- rule: respond to 현통상담 번호
+  steps:
+  - intent: ask_현통상담_번호
+  - action: utter_ask_현통상담_번호
+
+- rule: respond to 채플상담 번호
+  steps:
+  - intent: ask_채플상담_번호
+  - action: utter_ask_채플상담_번호
+
+- rule: respond to 국제담당 번호
+  steps:
+  - intent: ask_국제담당_번호
+  - action: utter_ask_국제담당_번호
+
+- rule: respond to 일본담당 번호
+  steps:
+  - intent: ask_일본담당_번호
+  - action: utter_ask_일본담당_번호
+
+- rule: respond to 중국담당 번호
+  steps:
+  - intent: ask_중국담당_번호
+  - action: utter_ask_중국담당_번호
+
+- rule: respond to 글로벌라운지 번호
+  steps:
+  - intent: ask_글로벌라운지_번호
+  - action: utter_ask_글로벌라운지_번호
+
+- rule: respond to 수업상담 번호
+  steps:
+  - intent: ask_수업상담_번호
+  - action: utter_ask_수업상담_번호
+
+- rule: respond to 성적 교직 번호
+  steps:
+  - intent: ask_성적_교직_번호
+  - action: utter_ask_성적_교직_번호
+
+- rule: respond to 학적상담 번호
+  steps:
+  - intent: ask_학적상담_번호
+  - action: utter_ask_학적상담_번호
+
+- rule: respond to 교육과정담당 번호
+  steps:
+  - intent: ask_교육과정담당_번호
+  - action: utter_ask_교육과정담당_번호
+
+- rule: respond to 사이버 강의 번호
+  steps:
+  - intent: ask_사이버_강의_번호
+  - action: utter_ask_사이버_강의_번호
+
+- rule: respond to 학생지도 번호
+  steps:
+  - intent: ask_학생지도_번호
+  - action: utter_ask_학생지도_번호
+
+- rule: respond to 서틀 통학 복지 번호
+  steps:
+  - intent: ask_서틀_통학_복지_번호
+  - action: utter_ask_서틀_통학_복지_번호
+
+- rule: respond to 교내장학 번호
+  steps:
+  - intent: ask_교내장학_번호
+  - action: utter_ask_교내장학_번호
+
+- rule: respond to 교외장학 학자금대출 번호
+  steps:
+  - intent: ask_교외장학_학자금대출_번호
+  - action: utter_ask_교외장학_학자금대출_번호
+
+- rule: respond to 국가장학 번호
+  steps:
+  - intent: ask_국가장학_번호
+  - action: utter_ask_국가장학_번호
+
+- rule: respond to 학생성공지원 번호
+  steps:
+  - intent: ask_학생성공지원_번호
+  - action: utter_ask_학생성공지원_번호
+
+- rule: respond to 취업 관련 비교과 프로그램 번호
+  steps:
+  - intent: ask_취업_관련_비교과_프로그램_번호
+  - action: utter_ask_취업_관련_비교과_프로그램_번호
+
+- rule: respond to 학생증 발급 번호
+  steps:
+  - intent: ask_학생증_발급_번호
+  - action: utter_ask_학생증_발급_번호
+
+- rule: respond to 학생 및 교직원 건강증진 번호
+  steps:
+  - intent: ask_학생_및_교직원_건강증진_번호
+  - action: utter_ask_학생_및_교직원_건강증진_번호
+
+- rule: respond to 성폭력 및 인권상담 번호
+  steps:
+  - intent: ask_성폭력_및_인권상담_번호
+  - action: utter_ask_성폭력_및_인권상담_번호
+
+- rule: respond to 학생상담 번호
+  steps:
+  - intent: ask_학생상담_번호
+  - action: utter_ask_학생상담_번호
+
+- rule: respond to 입시담당 번호
+  steps:
+  - intent: ask_입시담당_번호
+  - action: utter_ask_입시담당_번호
+
+- rule: respond to 대외홍보 번호
+  steps:
+  - intent: ask_대외홍보_번호
+  - action: utter_ask_대외홍보_번호
+
+- rule: respond to 등록금 담당 번호
+  steps:
+  - intent: ask_등록금_담당_번호
+  - action: utter_ask_등록금_담당_번호
+
+- rule: respond to 봉사교과 담당 번호
+  steps:
+  - intent: ask_봉사교과_담당_번호
+  - action: utter_ask_봉사교과_담당_번호
+
+- rule: respond to 정기간행물실 번호
+  steps:
+  - intent: ask_정기간행물실_번호
+  - action: utter_ask_정기간행물실_번호
+
+- rule: respond to 중앙도서관 주제별자료실 번호
+  steps:
+  - intent: ask_중앙도서관_주제별자료실_번호
+  - action: utter_ask_중앙도서관_주제별자료실_번호
+
+- rule: respond to 중앙도서관 STAR Lounge 번호
+  steps:
+  - intent: ask_중앙도서관_STAR_Lounge_번호
+  - action: utter_ask_중앙도서관_STAR_Lounge_번호
+
+- rule: respond to 사무실 번호
+  steps:
+  - intent: ask_사무실_번호
+  - action: utter_ask_사무실_번호
+
+- rule: respond to 대학신문사 번호
+  steps:
+  - intent: ask_대학신문사_번호
+  - action: utter_ask_대학신문사_번호
+
+- rule: respond to 영자신문 번호
+  steps:
+  - intent: ask_영자신문_번호
+  - action: utter_ask_영자신문_번호
+
+- rule: respond to 대학방송국 번호
+  steps:
+  - intent: ask_대학방송국_번호
+  - action: utter_ask_대학방송국_번호
+
+- rule: respond to 교지편집 번호
+  steps:
+  - intent: ask_교지편집_번호
+  - action: utter_ask_교지편집_번호
+
+- rule: respond to 사무실 번호
+  steps:
+  - intent: ask_사무실_번호
+  - action: utter_ask_사무실_번호
+
+- rule: respond to 사무실 번호
+  steps:
+  - intent: ask_사무실_번호
+  - action: utter_ask_사무실_번호
+
+- rule: respond to 교학지원 번호
+  steps:
+  - intent: ask_교학지원_번호
+  - action: utter_ask_교학지원_번호
+
+- rule: respond to 교학지원 번호
+  steps:
+  - intent: ask_교학지원_번호
+  - action: utter_ask_교학지원_번호
+
+- rule: respond to 사무실 번호
+  steps:
+  - intent: ask_사무실_번호
+  - action: utter_ask_사무실_번호
+
+- rule: respond to 사무실 번호
+  steps:
+  - intent: ask_사무실_번호
+  - action: utter_ask_사무실_번호
+
+- rule: respond to 장애학생지원 번호
+  steps:
+  - intent: ask_장애학생지원_번호
+  - action: utter_ask_장애학생지원_번호
+
+- rule: respond to 신학대학교학팀 번호
+  steps:
+  - intent: ask_신학대학교학팀_번호
+  - action: utter_ask_신학대학교학팀_번호
+
+- rule: respond to 신학과 번호
+  steps:
+  - intent: ask_신학과_번호
+  - action: utter_ask_신학과_번호
+
+- rule: respond to 인문사회대학교학팀 번호
+  steps:
+  - intent: ask_인문사회대학교학팀_번호
+  - action: utter_ask_인문사회대학교학팀_번호
+
+- rule: respond to 국어문학과 번호
+  steps:
+  - intent: ask_국어문학과_번호
+  - action: utter_ask_국어문학과_번호
+
+- rule: respond to 사회복지학과 번호
+  steps:
+  - intent: ask_사회복지학과_번호
+  - action: utter_ask_사회복지학과_번호
+
+- rule: respond to 상담심리학과 번호
+  steps:
+  - intent: ask_상담심리학과_번호
+  - action: utter_ask_상담심리학과_번호
+
+- rule: respond to 사학과 번호
+  steps:
+  - intent: ask_사학과_번호
+  - action: utter_ask_사학과_번호
+
+- rule: respond to 역사영상콘텐츠학부 번호
+  steps:
+  - intent: ask_역사영상콘텐츠학부_번호
+  - action: utter_ask_역사영상콘텐츠학부_번호
+
+- rule: respond to 미디어커뮤니케이션학부 번호
+  steps:
+  - intent: ask_미디어커뮤니케이션학부_번호
+  - action: utter_ask_미디어커뮤니케이션학부_번호
+
+- rule: respond to 법 경찰학과 번호
+  steps:
+  - intent: ask_법_경찰학과_번호
+  - action: utter_ask_법_경찰학과_번호
+
+- rule: respond to 글로벌한국학과 번호
+  steps:
+  - intent: ask_글로벌한국학과_번호
+  - action: utter_ask_글로벌한국학과_번호
+
+- rule: respond to 행정 공기업학과 번호
+  steps:
+  - intent: ask_행정_공기업학과_번호
+  - action: utter_ask_행정_공기업학과_번호
+
+- rule: respond to 글로벌비즈니스대학교학팀 번호
+  steps:
+  - intent: ask_글로벌비즈니스대학교학팀_번호
+  - action: utter_ask_글로벌비즈니스대학교학팀_번호
+
+- rule: respond to 외국어학부 번호
+  steps:
+  - intent: ask_외국어학부_번호
+  - action: utter_ask_외국어학부_번호
+
+- rule: respond to 영어학과 번호
+  steps:
+  - intent: ask_영어학과_번호
+  - action: utter_ask_영어학과_번호
+
+- rule: respond to 중국어문화학과 번호
+  steps:
+  - intent: ask_중국어문화학과_번호
+  - action: utter_ask_중국어문화학과_번호
+
+- rule: respond to 일어일본학과 번호
+  steps:
+  - intent: ask_일어일본학과_번호
+  - action: utter_ask_일어일본학과_번호
+
+- rule: respond to 러시아어학과 번호
+  steps:
+  - intent: ask_러시아어학과_번호
+  - action: utter_ask_러시아어학과_번호
+
+- rule: respond to 스페인어중남미학과 번호
+  steps:
+  - intent: ask_스페인어중남미학과_번호
+  - action: utter_ask_스페인어중남미학과_번호
+
+- rule: respond to 경영학과 번호
+  steps:
+  - intent: ask_경영학과_번호
+  - action: utter_ask_경영학과_번호
+
+- rule: respond to IT경영학과 번호
+  steps:
+  - intent: ask_IT경영학과_번호
+  - action: utter_ask_IT경영학과_번호
+
+- rule: respond to 글로벌경제학과 번호
+  steps:
+  - intent: ask_글로벌경제학과_번호
+  - action: utter_ask_글로벌경제학과_번호
+
+- rule: respond to 항공관광학부 번호
+  steps:
+  - intent: ask_항공관광학부_번호
+  - action: utter_ask_항공관광학부_번호
+
+- rule: respond to 정치 국제학과 번호
+  steps:
+  - intent: ask_정치_국제학과_번호
+  - action: utter_ask_정치_국제학과_번호
+
+- rule: respond to 건강보건대학교학팀 번호
+  steps:
+  - intent: ask_건강보건대학교학팀_번호
+  - action: utter_ask_건강보건대학교학팀_번호
+
+- rule: respond to 제약생명공학과 번호
+  steps:
+  - intent: ask_제약생명공학과_번호
+  - action: utter_ask_제약생명공학과_번호
+
+- rule: respond to 식품과학부 번호
+  steps:
+  - intent: ask_식품과학부_번호
+  - action: utter_ask_식품과학부_번호
+
+- rule: respond to 수산생명의학과 번호
+  steps:
+  - intent: ask_수산생명의학과_번호
+  - action: utter_ask_수산생명의학과_번호
+
+- rule: respond to 간호학과 번호
+  steps:
+  - intent: ask_간호학과_번호
+  - action: utter_ask_간호학과_번호
+
+- rule: respond to 물리치료학과 번호
+  steps:
+  - intent: ask_물리치료학과_번호
+  - action: utter_ask_물리치료학과_번호
+
+- rule: respond to 치위생학과 번호
+  steps:
+  - intent: ask_치위생학과_번호
+  - action: utter_ask_치위생학과_번호
+
+- rule: respond to 응급구조학과 번호
+  steps:
+  - intent: ask_응급구조학과_번호
+  - action: utter_ask_응급구조학과_번호
+
+- rule: respond to 공과대학교학팀 번호
+  steps:
+  - intent: ask_공과대학교학팀_번호
+  - action: utter_ask_공과대학교학팀_번호
+
+- rule: respond to 건축학부 번호
+  steps:
+  - intent: ask_건축학부_번호
+  - action: utter_ask_건축학부_번호
+
+- rule: respond to 건설시스템안전공학과 번호
+  steps:
+  - intent: ask_건설시스템안전공학과_번호
+  - action: utter_ask_건설시스템안전공학과_번호
+
+- rule: respond to 기계공학과 번호
+  steps:
+  - intent: ask_기계공학과_번호
+  - action: utter_ask_기계공학과_번호
+
+- rule: respond to 스마트정보통신공학과 번호
+  steps:
+  - intent: ask_스마트정보통신공학과_번호
+  - action: utter_ask_스마트정보통신공학과_번호
+
+- rule: respond to 디스플레이반도체공학과 번호
+  steps:
+  - intent: ask_디스플레이반도체공학과_번호
+  - action: utter_ask_디스플레이반도체공학과_번호
+
+- rule: respond to 전자공학과 번호
+  steps:
+  - intent: ask_전자공학과_번호
+  - action: utter_ask_전자공학과_번호
+
+- rule: respond to 신소재공학과 번호
+  steps:
+  - intent: ask_신소재공학과_번호
+  - action: utter_ask_신소재공학과_번호
+
+- rule: respond to 에너지화학공학과 번호
+  steps:
+  - intent: ask_에너지화학공학과_번호
+  - action: utter_ask_에너지화학공학과_번호
+
+- rule: respond to 산업안전경영공학과 번호
+  steps:
+  - intent: ask_산업안전경영공학과_번호
+  - action: utter_ask_산업안전경영공학과_번호
+
+- rule: respond to 일반물리 번호
+  steps:
+  - intent: ask_일반물리_번호
+  - action: utter_ask_일반물리_번호
+
+- rule: respond to 기초공학부 번호
+  steps:
+  - intent: ask_기초공학부_번호
+  - action: utter_ask_기초공학부_번호
+
+- rule: respond to 소프트웨어융합대학교학팀 번호
+  steps:
+  - intent: ask_소프트웨어융합대학교학팀_번호
+  - action: utter_ask_소프트웨어융합대학교학팀_번호
+
+- rule: respond to 컴퓨터공학부 번호
+  steps:
+  - intent: ask_컴퓨터공학부_번호
+  - action: utter_ask_컴퓨터공학부_번호
+
+- rule: respond to AI소프트웨어학과 번호
+  steps:
+  - intent: ask_AI소프트웨어학과_번호
+  - action: utter_ask_AI소프트웨어학과_번호
+
+- rule: respond to 미래자동차공학부 번호
+  steps:
+  - intent: ask_미래자동차공학부_번호
+  - action: utter_ask_미래자동차공학부_번호
+
+- rule: respond to IT교육학부 번호
+  steps:
+  - intent: ask_IT교육학부_번호
+  - action: utter_ask_IT교육학부_번호
+
+- rule: respond to 소프트웨어융합학부 번호
+  steps:
+  - intent: ask_소프트웨어융합학부_번호
+  - action: utter_ask_소프트웨어융합학부_번호
+
+- rule: respond to 예술체육대학교학팀 번호
+  steps:
+  - intent: ask_예술체육대학교학팀_번호
+  - action: utter_ask_예술체육대학교학팀_번호
+
+- rule: respond to 디자인학부 번호
+  steps:
+  - intent: ask_디자인학부_번호
+  - action: utter_ask_디자인학부_번호
+
+- rule: respond to 영상예술학과 번호
+  steps:
+  - intent: ask_영상예술학과_번호
+  - action: utter_ask_영상예술학과_번호
+
+- rule: respond to 스포츠과학부 번호
+  steps:
+  - intent: ask_스포츠과학부_번호
+  - action: utter_ask_스포츠과학부_번호
+
+- rule: respond to 무도경호학부 번호
+  steps:
+  - intent: ask_무도경호학부_번호
+  - action: utter_ask_무도경호학부_번호
+
+- rule: respond to 자유전공대학 교학팀 번호
+  steps:
+  - intent: ask_자유전공대학_교학팀_번호
+  - action: utter_ask_자유전공대학_교학팀_번호
+
+- rule: respond to 글로벌자유전공학부 번호
+  steps:
+  - intent: ask_글로벌자유전공학부_번호
+  - action: utter_ask_글로벌자유전공학부_번호
+
+- rule: respond to 자유전공학부 번호
+  steps:
+  - intent: ask_자유전공학부_번호
+  - action: utter_ask_자유전공학부_번호
+
+- rule: respond to 교양학부 번호
+  steps:
+  - intent: ask_교양학부_번호
+  - action: utter_ask_교양학부_번호
+
+- rule: respond to 산학협력교육학부 번호
+  steps:
+  - intent: ask_산학협력교육학부_번호
+  - action: utter_ask_산학협력교육학부_번호
+
+- rule: respond to IT교육학부 번호
+  steps:
+  - intent: ask_IT교육학부_번호
+  - action: utter_ask_IT교육학부_번호
+
+- rule: respond to 외국어교육원 번호
+  steps:
+  - intent: ask_외국어교육원_번호
+  - action: utter_ask_외국어교육원_번호
+
+- rule: respond to 진로설계교양센터 번호
+  steps:
+  - intent: ask_진로설계교양센터_번호
+  - action: utter_ask_진로설계교양센터_번호
+
+- rule: respond to 수업 교육과정 성적 졸업 학위논문 번호
+  steps:
+  - intent: ask_수업_교육과정_성적_졸업_학위논문_번호
+  - action: utter_ask_수업_교육과정_성적_졸업_학위논문_번호
+
+- rule: respond to BK21 학술지원 발전계획 구조개선 통계 규정 번호
+  steps:
+  - intent: ask_BK21_학술지원_발전계획_구조개선_통계_규정_번호
+  - action: utter_ask_BK21_학술지원_발전계획_구조개선_통계_규정_번호
+
+- rule: respond to 입학 홍보 홈페이지 학위수여식 번호
+  steps:
+  - intent: ask_입학_홍보_홈페이지_학위수여식_번호
+  - action: utter_ask_입학_홍보_홈페이지_학위수여식_번호
+
+- rule: respond to 장학 등록 학자금대출 번호
+  steps:
+  - intent: ask_장학_등록_학자금대출_번호
+  - action: utter_ask_장학_등록_학자금대출_번호
+
+- rule: respond to 학과지원 번호
+  steps:
+  - intent: ask_학과지원_번호
+  - action: utter_ask_학과지원_번호
+
+- rule: respond to 학과지원 번호
+  steps:
+  - intent: ask_학과지원_번호
+  - action: utter_ask_학과지원_번호
+
+- rule: respond to 통일사상연구원 번호
+  steps:
+  - intent: ask_통일사상연구원_번호
+  - action: utter_ask_통일사상연구원_번호
+
 
 # - rule: Say 'I am a bot' anytime the user challenges
 #   steps:
