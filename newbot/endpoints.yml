@@ -8,5 +8,5 @@ tracker_store:
   port: 3306
   db: "rasa_core" 
   username: "root"
-  password: "123456"
+  password: "1234"
   session_persistence: false 
