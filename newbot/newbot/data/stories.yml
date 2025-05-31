@@ -1,0 +1,31 @@
+version: "3.1"
+
+stories:
+- story: 방문 규칙 안내
+  steps:
+  - intent: ask_visitor_rules
+  - action: utter_visitor_rules
+
+- story: 청소 규칙 안내
+  steps:
+  - intent: ask_cleaning_rules
+  - action: utter_cleaning_rules
+
+- story: 세탁 규칙 안내
+  steps:
+  - intent: ask_laundry_rules
+  - action: utter_laundry_rules
+
+- story: 청소 이미지 출력
+  steps:
+  - intent: ask_cleaning_image
+  - action: utter_cleaning_image
+  - action: action_show_cleaning_image
+
+- story: 세탁 이미지 출력
+  steps:
+  - intent: ask_laundry_image
+  - action: utter_laundry_image
+  - action: action_show_laundry_image
+
+

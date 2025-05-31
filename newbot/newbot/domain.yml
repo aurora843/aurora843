@@ -1,0 +1,54 @@
+version: "3.1"
+
+intents:
+  - ask_visitor_rules
+  - ask_cleaning_rules
+  - ask_laundry_rules
+  - ask_cleaning_image
+  - ask_laundry_image
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_category_rule
+  - mood_great
+ 
+
+
+responses:
+  utter_greet:
+    - text: "반가워!"
+    - text: "안녕!"
+  utter_happy:
+    - text: "힘내!"
+  
+  utter_goodbye:
+    - text: "잘 가"
+    - text: "내일 봐"
+    - text: "나중에 보자"
+  
+  utter_visitor_rules:
+  - text: "얼굴 ID 인식 사용 필수. 학기 시작 전 행정실(103-104동 사이 4층)에서 얼굴 데이터 및 개인 정보 등록을 해야합니다."
+
+  utter_cleaning_rules:
+  - text: "지정된 쓰레기통을 사용하고 분리수거 지침을 준수해주세요."
+
+  utter_laundry_rules:
+  - text: "앱 다운, 금액충전후 세탁실과 세탁기를 선택하여 사용하면됩니다."
+
+  utter_cleaning_image:
+  - text: "청소 관련 규칙은 다음 이미지에서 확인하세요:"
+
+  utter_laundry_image:
+  - text: "세탁 관련 규칙은 다음 이미지에서 확인하세요:"
+ 
+actions:
+  - action_chatbot
+  - action_show_cleaning_image
+  - action_show_laundry_image
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
