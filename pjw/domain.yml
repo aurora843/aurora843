@@ -27,4 +27,3 @@ responses:
 session_config:
   session_expiration_time: 0  # 0이면 "새로운 탭/새로고침 시 매번 새 세션"
   carry_over_slots_to_new_session: false
-
