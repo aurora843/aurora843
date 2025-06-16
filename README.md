@@ -24,18 +24,23 @@
  <img src="https://github.com/aurora843/aurora843/blob/main/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(2).png">
 
 Rasa 서버 (Port 5005): NLU(자연어 이해) 및 Core(대화 관리)를 담당하는 챗봇의 핵심 두뇌
+
 액션 서버 (Port 5055): 데이터베이스 조회 등 복잡한 로직을 수행하는 actions.py 실행
+
 이미지 서버 (Port 8080): Flask 기반으로 구축, 로컬 이미지 파일을 웹 URL로 제공
+
 데이터베이스 (MySQL): rules_data(규칙), chatbot(연락처), images(이미지 정보) 테이블에 챗봇의 모든 지식 저장
+
 ⚙️ 설치 및 시작하기
 사전 요구사항
 Anaconda (or Miniconda) & Python 3.10
 MySQL Server
 1. 프로젝트 클론
-Bash
 
+Bash
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
+
 2. Python 가상 환경 설정
 Bash
 
