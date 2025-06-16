@@ -22,7 +22,7 @@ Sheets로 내보내기
 🏗️ 시스템 아키텍처
 본 챗봇은 안정성과 확장성을 위해 역할에 따라 3개의 독립적인 서버와 1개의 데이터베이스로 구성된 모듈형 아키텍처를 가진다.
 
-(여기에 직접 만드신 시스템 구성도 다이어그램 이미지를 추가: ![시스템 구성도](path/to/diagram.png))
+ <img src="https://github.com/aurora843/aurora843/blob/main/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(2).png">
 
 Rasa 서버 (Port 5005): NLU(자연어 이해) 및 Core(대화 관리)를 담당하는 챗봇의 핵심 두뇌
 액션 서버 (Port 5055): 데이터베이스 조회 등 복잡한 로직을 수행하는 actions.py 실행
