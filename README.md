@@ -1,5 +1,7 @@
 ## Rasa 기반 지능형 기숙사 정보 안내 챗봇
 
+챗봇 제작 과정
+https://aurora718.tistory.com/14
 
 
 # 📖 프로젝트 소개
