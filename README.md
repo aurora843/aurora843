@@ -31,12 +31,18 @@ Rasa 서버 (Port 5005): NLU(자연어 이해) 및 Core(대화 관리)를 담당
 
 데이터베이스 (MySQL): rules_data(규칙), chatbot(연락처), images(이미지 정보) 테이블에 챗봇의 모든 지식 저장
 
-⚙️ 설치 및 시작하기
+# ⚙️ 설치 및 시작하기
 사전 요구사항
-Anaconda (or Miniconda) & Python 3.10
+Anaconda 
+Python 3.10
+Rasa 3.6.21
+numpy 1.23.5
+pydantic 1.10.9
+tensorflow 2.11.1 (or 2.10)
+spacy3.5
+
 MySQL Server
 1. 프로젝트 클론
-
 Bash
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
