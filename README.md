@@ -18,8 +18,7 @@
 자연어 처리	KoNLPy (Okt), Googletrans
 개발 환경	Anaconda, Git, GitHub
 
-Sheets로 내보내기
-🏗️ 시스템 아키텍처
+# 🏗️ 시스템 아키텍처
 본 챗봇은 안정성과 확장성을 위해 역할에 따라 3개의 독립적인 서버와 1개의 데이터베이스로 구성된 모듈형 아키텍처를 가진다.
 
  <img src="https://github.com/aurora843/aurora843/blob/main/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(2).png">
