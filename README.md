@@ -11,15 +11,22 @@ https://aurora718.tistory.com/14
 
 # ✨ 주요 기능
 데이터베이스 연동 정보 제공: MySQL DB에 저장된 300여 개의 규칙 및 연락처 정보를 동적으로 조회하여 텍스트로 답변
+
 멀티미디어 응답 (이미지): 규칙 안내, 수강신청 방법, 학교 지도 등 특정 질문에 텍스트와 함께 관련 이미지를 시각적으로 제공하여 정보 이해도 향상
+
 지능형 한국어 처리: 형태소 분석기인 KoNLPy를 이용해 한국어의 유연한 띄어쓰기 및 다양한 표현에 대응하는 NLU 모델 구축
+
 다국어 지원 기반: googletrans 라이브러리를 활용하여, 외국인 유학생의 비한국어 질문에 대한 기본적인 응대 및 번역 기능 구현
 
 # 🛠️ 기술 스택
 분야	주요 기술
+
 챗봇 프레임워크	Rasa (NLU, Core)
+
 백엔드	Python, Flask (이미지 서버), MySQL (데이터베이스)
+
 자연어 처리	KoNLPy (Okt), Googletrans
+
 개발 환경	Anaconda, Git, GitHub
 
 # 🏗️ 시스템 아키텍처
@@ -38,11 +45,17 @@ Rasa 서버 (Port 5005): NLU(자연어 이해) 및 Core(대화 관리)를 담당
 # ⚙️ 설치 및 시작하기
 사전 요구사항
 Anaconda 
+
 Python 3.10
+
 Rasa 3.6.21
+
 numpy 1.23.5
+
 pydantic 1.10.9
+
 tensorflow 2.11.1 (or 2.10)
+
 spacy3.5
 
 MySQL Server
