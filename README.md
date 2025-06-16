@@ -1,49 +1,35 @@
-## Rasa를 이용한 성화학숙 챗봇
+## Rasa 기반 지능형 기숙사 정보 안내 챗봇
+
+
+
 
 📖 프로젝트 소개
-본 프로젝트는 기존 '성화학숙 앱'을 유학생을 포함한 모든 학생들을 위한 **'통합 스마트 생활 플랫폼'**으로 고도화하는 것을 목표로 진행한 애플리케이션 개발 과제입니다. 분산되어 있던 정보 채널과 소통 창구를 하나로 통합하여, 학생들의 기숙사 생활 만족도를 높이고 행정 업무의 효율성을 증대시키고자 했습니다.
+본 프로젝트는 선문대학교 성화학숙(기숙사) 학생들을 위한 지능형 정보 안내 챗봇이다. Rasa 프레임워크와 MySQL 데이터베이스를 기반으로, 기숙사 규칙, 교내 연락처, 시설 안내 등 반복적인 질문에 24시간 실시간으로 응답한다. 텍스트와 이미지를 활용한 직관적인 정보 제공을 통해 학생들의 편의를 증진하고 행정 업무의 효율성을 높이는 것을 목표로 한다.
 
 ✨ 주요 기능
-🎨 UI/UX 전면 개편
-
-현대적이고 직관적인 디자인 적용
-사용 편의성을 고려한 탐색 구조 및 레이아웃 개선
-다크 모드 및 개인화 테마 기능
-💬 커뮤니티 및 소통 강화
-
-실시간 1:1 및 그룹 메신저 기능
-페이스북 그룹 형태의 소모임 공간
-학생 참여형 익명 게시판 및 이벤트 캘린더
-ኑ 생활 편의 증진
-
-공용 주방 실시간 이용 현황 공유 및 예약
-각종 행정 서류를 다운로드할 수 있는 문서 보관소
-실시간 푸시 알림 (공지, 메시지 등)
-🤖 지능형 정보 지원
-
-Rasa 기반 AI 챗봇: 24시간 규칙, 연락처 등 문의에 자동 응답
-FAQ, 아산 탐방, 선문대 소개 등 생활 정보 콘텐츠 제공
-다국어 번역 및 지역화(Localization)를 통한 언어 장벽 해소
+데이터베이스 연동 정보 제공: MySQL DB에 저장된 200여 개의 규칙 및 연락처 정보를 동적으로 조회하여 텍스트로 답변
+멀티미디어 응답 (이미지): 규칙 안내, 수강신청 방법, 학교 지도 등 특정 질문에 텍스트와 함께 관련 이미지를 시각적으로 제공하여 정보 이해도 향상
+지능형 한국어 처리: KoNLPy(Okt) 기반의 커스텀 토크나이저(korean_tokenizer.py)를 직접 구현하여, 한국어의 유연한 띄어쓰기 및 다양한 표현에 대응하는 NLU 모델 구축
+다국어 지원 기반: googletrans 라이브러리를 활용하여, 외국인 유학생의 비한국어 질문에 대한 기본적인 응대 및 번역 기능 구현
 🛠️ 기술 스택
 분야	주요 기술
-Frontend	Flutter, Android Studio
-Backend	Python, Flask, MySQL
-AI Chatbot	Rasa, KoNLPy, Googletrans
+챗봇 프레임워크	Rasa (NLU, Core)
+백엔드	Python, Flask (이미지 서버), MySQL (데이터베이스)
+자연어 처리	KoNLPy (Okt), Googletrans
 개발 환경	Anaconda, Git, GitHub
 
 Sheets로 내보내기
 🏗️ 시스템 아키텍처
-본 시스템은 역할에 따라 명확하게 분리된 마이크로서비스 아키텍처를 기반으로 설계되었습니다.
+본 챗봇은 안정성과 확장성을 위해 역할에 따라 3개의 독립적인 서버와 1개의 데이터베이스로 구성된 모듈형 아키텍처를 가진다.
 
-(여기에 직접 만드신 시스템 구성도 다이어그램 이미지를 추가하세요. 예: ![시스템 구성도](path/to/diagram.png))
+(여기에 직접 만드신 시스템 구성도 다이어그램 이미지를 추가: ![시스템 구성도](path/to/diagram.png))
 
-Rasa 서버 (5005): NLU 및 대화 관리를 담당하는 챗봇의 핵심 두뇌
-액션 서버 (5055): DB 조회 등 복잡한 로직을 수행하는 actions.py 실행
-이미지 서버 (8080): Flask 기반으로 구축된 독립 이미지 제공 서버
-데이터베이스: MySQL을 통해 chatbot(연락처), rules_data(규칙), images(이미지 정보) 등 모든 데이터를 영속적으로 관리
+Rasa 서버 (Port 5005): NLU(자연어 이해) 및 Core(대화 관리)를 담당하는 챗봇의 핵심 두뇌
+액션 서버 (Port 5055): 데이터베이스 조회 등 복잡한 로직을 수행하는 actions.py 실행
+이미지 서버 (Port 8080): Flask 기반으로 구축, 로컬 이미지 파일을 웹 URL로 제공
+데이터베이스 (MySQL): rules_data(규칙), chatbot(연락처), images(이미지 정보) 테이블에 챗봇의 모든 지식 저장
 ⚙️ 설치 및 시작하기
 사전 요구사항
-Flutter & Android Studio
 Anaconda (or Miniconda) & Python 3.10
 MySQL Server
 1. 프로젝트 클론
@@ -51,43 +37,45 @@ Bash
 
 git clone https://github.com/your-username/your-repository.git
 cd your-repository
-2. 백엔드(Rasa/Python) 환경 설정
+2. Python 가상 환경 설정
 Bash
 
 # 새로운 Conda 가상 환경 생성 및 활성화
-conda create --name seonghwa_env python=3.10
-conda activate seonghwa_env
+conda create --name rasa_env python=3.10
+conda activate rasa_env
 
-# 필수 라이브러리 설치
-pip install rasa==3.6.21 "rasa[transformers]" mysql-connector-python pymysql googletrans==4.0.0-rc1 konlpy
+# 필수 라이브러리 설치 (Rasa 및 의존성)
+pip install rasa==3.6.21
+pip install mysql-connector-python pymysql googletrans==4.0.0-rc1 konlpy
 
-# (만약 의존성 충돌 발생 시) 아래 명령어로 호환 버전 직접 명시
+# Rasa 3.6.21 호환성을 위한 버전 고정 (중요)
 pip install packaging==20.9 protobuf==4.23.3 tensorflow==2.12.0 tensorflow-intel==2.12.0
 3. 데이터베이스 및 데이터 설정
-MySQL 서버에 rasa_core 데이터베이스를 생성합니다.
-프로젝트 내 Python 스크립트(insert_rules.py, insert_contacts.py 등)를 실행하여 rules_data, chatbot, images 테이블에 초기 데이터를 삽입합니다.
-image_server.py의 BASE_IMAGE_DIR 경로에 맞게 이미지 파일들을 준비합니다.
+MySQL 서버에 rasa_core 데이터베이스를 생성한다.
+프로젝트 내 Python 스크립트(insert_rules.py, insert_contacts.py 등)를 실행하여 rules_data, chatbot, images 테이블에 초기 데이터를 삽입한다.
+image_server.py의 BASE_IMAGE_DIR 경로에 맞게 이미지 파일들을 준비한다.
 4. Rasa 모델 학습
 Bash
 
 rasa train
 🚀 실행 방법
-백엔드 서버들을 각각 다른 터미널에서 실행해야 합니다.
+프로젝트를 실행하려면 3개의 터미널 창이 필요하다. 각 터미널에서 가상 환경을 활성화(conda activate rasa_env)한 후 다음을 순서대로 실행한다.
 
-이미지 서버 실행:
+터미널 1: 이미지 서버 실행
+
 Bash
 
 python image_server.py
-Rasa 액션 서버 실행:
+터미널 2: Rasa 액션 서버 실행
+
 Bash
 
 rasa run actions
-Rasa 메인 서버 실행:
+터미널 3: Rasa 메인 서버 실행
+
 Bash
 
 rasa run
-Flutter 앱 실행:
-Android Studio를 열고 프로젝트를 빌드하거나, 터미널에서 다음을 실행합니다. <!-- end list -->
-Bash
+<!-- end list -->
 
-flutter run
+모든 서버가 실행되면, webchat.html 파일을 웹 브라우저에서 열어 챗봇을 테스트할 수 있다.
