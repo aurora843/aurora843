@@ -60,32 +60,47 @@ spacy3.5
 
 MySQL Server
 1. 프로젝트 클론
+
 Bash
+
 git clone https://github.com/your-username/your-repository.git
+
 cd your-repository
 
 2. Python 가상 환경 설정
 Bash
 
 # 새로운 Conda 가상 환경 생성 및 활성화
+
 conda create --name rasa_env python=3.10
+
 conda activate rasa_env
 
 # 필수 라이브러리 설치 (Rasa 및 의존성)
+
 pip install rasa==3.6.21
+
 pip install mysql-connector-python pymysql googletrans==4.0.0-rc1 konlpy
 
 # Rasa 3.6.21 호환성을 위한 버전 고정 (중요)
+
 pip install packaging==20.9 protobuf==4.23.3 tensorflow==2.12.0 tensorflow-intel==2.12.0
 3. 데이터베이스 및 데이터 설정
+
 MySQL 서버에 rasa_core 데이터베이스를 생성한다.
+
 프로젝트 내 Python 스크립트(insert_rules.py, insert_contacts.py 등)를 실행하여 rules_data, chatbot, images 테이블에 초기 데이터를 삽입한다.
+
 image_server.py의 BASE_IMAGE_DIR 경로에 맞게 이미지 파일들을 준비한다.
+
 4. Rasa 모델 학습
+
 Bash
 
 rasa train
+
 🚀 실행 방법
+
 프로젝트를 실행하려면 3개의 터미널 창이 필요하다. 각 터미널에서 가상 환경을 활성화(conda activate rasa_env)한 후 다음을 순서대로 실행한다.
 
 터미널 1: 이미지 서버 실행
@@ -93,16 +108,19 @@ rasa train
 Bash
 
 python image_server.py
+
 터미널 2: Rasa 액션 서버 실행
 
 Bash
 
 rasa run actions
+
 터미널 3: Rasa 메인 서버 실행
 
 Bash
 
 rasa run
+
 <!-- end list -->
 
 모든 서버가 실행되면, webchat.html 파일을 웹 브라우저에서 열어 챗봇을 테스트할 수 있다.
