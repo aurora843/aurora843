@@ -3,7 +3,9 @@
 챗봇 제작 과정
 https://aurora718.tistory.com/14
 
-사용하시기 전, Mysql 설정을 수정해주세요!
+aurora 파일을 다운받아 사용해주세요! 
+
+사용하시기 전, endpoints.yml와 actions.py의 Mysql 설정을 수정해주세요!
 
 
 # 📖 프로젝트 소개
