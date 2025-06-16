@@ -4,6 +4,8 @@
   <img src="https://github.com/aurora843/aurora843/blob/main/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(2).png">
 
 실행 전 설치해야 할 필수 라이브러리들  
+| 헤더1 | 헤더2 | 헤더3 |
+| --- | --- | --- |
 
 <!--
 **aurora843/aurora843** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
