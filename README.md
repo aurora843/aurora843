@@ -1,4 +1,5 @@
 ## Rasa를 이용한 챗봇 개발  👋
+## 챗봇 아키텍쳐
 
   <img src="https://github.com/aurora843/aurora843/blob/main/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C%20(2).png">
 
